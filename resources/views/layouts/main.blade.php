@@ -13,7 +13,7 @@
     <title>@yield('title') | BeeFlix</title>
 </head>
 
-<body>
+<body class="bg-dark">
     @include('partials.navbar')
 
     @yield('content')
