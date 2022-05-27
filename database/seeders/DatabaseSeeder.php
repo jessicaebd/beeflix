@@ -3,6 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Database\Seeders\GenreSeeder;
+use Database\Seeders\MovieSeeder;
+use Database\Seeders\EpisodeSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call([
+            GenreSeeder::class,
+            MovieSeeder::class,
+            EpisodeSeeder::class,
+        ]);
     }
 }
