@@ -23,3 +23,5 @@ This page shows Movies in the same Category. User can select "view all movies" t
 5. You must use the given database structure (ERD), not allowed to change the database structure (reduce, add, and replace)!
 6. Use database migration and database Seeder (Laravel's feature) to create tables and populate data (collected, part of the assessment).
 7. Use the features available in Laravel (eloquent, blade template, controller, etc.)!
+
+Note : Project Laravel and DB MySQL upload to Online Drive, give capture/screenshot each page of your application. Screenshot and link drive online attach in MS Word/PDF.
