@@ -3,8 +3,11 @@
 @section('title', 'Movie')
 
 @section('content')
-    <div class="container">
-        <h2 class="text-warning py-2">{{ $genre->name }}</h2>
+    <div class="container mt-5">
+        <a href="/genre/{{ $genre->id }}" style="text-decoration: none;"
+            class="text-light py-2 border-start border-4 border-warning">
+            <span class="fs-2 px-3">{{ $genre->name }}</span>
+        </a>
 
         <div class="row">
             @foreach ($movies as $movie)

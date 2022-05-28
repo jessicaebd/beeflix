@@ -31,7 +31,7 @@
 
     </style>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-6 col-md-3">
                 <img src="/photos/{{ $movie->genre->name }}/{{ $movie->photo }}" class="card-img-top" width="80%"

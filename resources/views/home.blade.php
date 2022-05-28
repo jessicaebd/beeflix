@@ -3,10 +3,11 @@
 @section('title', 'Home')
 
 @section('content')
-    <div class="container">
+    <div class="container mt-5">
         @foreach ($genres as $genre)
-            <a href="/genre/{{ $genre->id }}" style="text-decoration: none;">
-                <h2 class="   text-warning py-2">{{ $genre->name }}</h2>
+            <a href="/genre/{{ $genre->id }}" style="text-decoration: none;"
+                class="text-light py-2 border-start border-4 border-warning">
+                <span class="fs-2 px-3">{{ $genre->name }}</span>
             </a>
 
             <div class="row">

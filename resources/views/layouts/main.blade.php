@@ -16,7 +16,9 @@
 <body class="bg-dark">
     @include('partials.navbar')
 
-    @yield('content')
+    <div class="container-fluid mt-5 pt-5">
+        @yield('content')
+    </div>
 
     {{-- Bootstrap JS --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
