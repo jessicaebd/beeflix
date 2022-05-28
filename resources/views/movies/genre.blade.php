@@ -1,7 +1,5 @@
 @extends('layouts.main')
 
-@section('title', 'Movie')
-
 @section('content')
     <div class="container mt-5">
         <a href="/genre/{{ $genre->id }}" style="text-decoration: none;"

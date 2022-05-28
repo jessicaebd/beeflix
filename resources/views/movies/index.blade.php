@@ -1,7 +1,5 @@
 @extends('layouts.main')
 
-@section('title', 'Movie')
-
 @section('content')
     <style>
         [aria-current] .page-link {

@@ -1,7 +1,5 @@
 @extends('layouts.main')
 
-@section('title', 'Home')
-
 @section('content')
     <div class="container mt-5">
         @foreach ($genres as $genre)
