@@ -15,12 +15,12 @@
                                 <img src="/photos/{{ $genre->name }}/{{ $movie->photo }}" class="card-img-top"
                                     width="100%" height="350" alt="...">
                                 <h1 class="fs-6 text-center pt-3 pb-2">{{ $movie->title }}</h1>
-                                <a href="#" class="btn btn-warning rounded-0"><b>LIHAT FILM</b></a>
+                                <a href="/movie/{{ $movie->id }}" class="btn btn-warning rounded-0"><b>LIHAT
+                                        FILM</b></a>
                             </div>
                         </div>
                     @endif
                 @endforeach
-
                 <hr class="text-secondary mt-5">
             </div>
         @endforeach
