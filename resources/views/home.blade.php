@@ -5,7 +5,9 @@
 @section('content')
     <div class="container">
         @foreach ($genres as $genre)
-            <h2 class="text-warning py-2">{{ $genre->name }}</h2>
+            <a href="/genre/{{ $genre->id }}" style="text-decoration: none;">
+                <h2 class="   text-warning py-2">{{ $genre->name }}</h2>
+            </a>
 
             <div class="row">
                 @foreach ($movies as $movie)

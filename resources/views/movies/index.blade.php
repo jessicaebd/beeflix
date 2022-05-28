@@ -63,7 +63,7 @@
 
                         <p>{{ $movie->description }}</p>
 
-                        <span>Kategori: <a href="#"
+                        <span>Kategori: <a href="/genre/{{ $movie->genre->id }}"
                                 style="text-decoration: none; color: rgb(95, 124, 253)">{{ $movie->genre->name }}</a></span>
                     </div>
 

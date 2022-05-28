@@ -24,4 +24,14 @@ class MovieController extends Controller
             'episodes' => Movie::find($id)->episodes()->paginate(3),
         ]);
     }
+
+    public function showGenre($id)
+    {
+        $movies = Movie::where('genre_id', $id)->get();
+
+        return view('movies.genre', [
+            'movies' => $movies,
+            'genre' => Genre::find($id),
+        ]);
+    }
 }
